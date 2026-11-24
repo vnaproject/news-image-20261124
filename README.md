@@ -62,4 +62,8 @@ law and health across the US, the Gulf, Korea, Libya and Europe.
 - `python3 render.py` twice: byte-identical `entry.png` (same sha256).
 - `entry.png`: 1024x1024 PNG, under 1 MiB.
 - `main.ts` copies it to `/output/entry.png`; run twice, same bytes.
-- Kit check: `node ../news-image-20261124-kit/cli/makefun.mjs check` — 0 failed.
+- Kit check: `node ../news-image-20261124-kit/cli/makefun.mjs check` —
+  5 passed (competition_open, snapshot, license_osi MIT, entrypoint node22,
+  repo_created_after_open drand round 34227943), 1 failed
+  (transcripts_present — the coordinator bundles the session transcripts
+  after the build session ends), 15 skipped, 3 checked at submission.
